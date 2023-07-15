@@ -1,18 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-
-function MyButton({count,onClick}){
-  
-
-
-
-  return (
-    <button onClick={onClick}
-    className='button'
-    >I'm a button clicked {count} times</button>
-  );
-}
+import MyButton from './Button/Button'
 
 const user = {
   name: 'neil',
@@ -43,7 +32,7 @@ function App() {
           
         </a>
         <MyButton count={count} onClick={handleClick} />
-        <MyButton count={count} onClick={handleClick} />
+        
       </header>
     </div>
   );
